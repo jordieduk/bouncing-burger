@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="w[/QI?b2zkJ//c=4U!ip">mySprite</variable><variable id="6$n*-Ixyjhuim}lag7Z*">velocitatX</variable><variable id="Nvq]Nw#H6#H0~-g2v;U0" type="KIND_SpriteKind">Player</variable><variable id="=5da+W88|33935x^N%A*" type="KIND_SpriteKind">Projectile</variable><variable id="i(nrOfiefL{i/z_.81Sp" type="KIND_SpriteKind">Food</variable><variable id="NRorMiZ/x`;qS:$4PKhr" type="KIND_SpriteKind">Enemy</variable></variables><block type="pxt-on-start" y="0" x="0"><statement name="HANDLER"><block type="variables_set"><field id="6$n*-Ixyjhuim}lag7Z*" name="VAR">velocitatX</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow></value><next><block type="variables_set"><field id="w[/QI?b2zkJ//c=4U!ip" name="VAR">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . c c c b b b b b . . . . 
+. . c c b 4 4 4 4 4 4 b b b . . 
+. c c 4 4 4 4 4 5 4 4 4 4 b c . 
+. e 4 4 4 4 4 4 4 4 4 5 4 4 e . 
+e b 4 5 4 4 5 4 4 4 4 4 4 4 b c 
+e b 4 4 4 4 4 4 4 4 4 4 5 4 4 e 
+e b b 4 4 4 4 4 4 4 4 4 4 4 b e 
+. e b 4 4 4 4 4 5 4 4 4 4 b e . 
+8 7 e e b 4 4 4 4 4 4 b e e 6 8 
+8 7 2 e e e e e e e e e e 2 7 8 
+e 6 6 2 2 2 2 2 2 2 2 2 2 6 c e 
+e c 6 7 6 6 7 7 7 6 6 7 6 c c e 
+e b e 8 8 c c 8 8 c c c 8 e b e 
+e e b e c c e e e e e c e b e e 
+. e e b b 4 4 4 4 4 4 4 4 e e . 
+. . . c c c c c e e e e e . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="Sprite_blockCombine_set"><field name="property">Sprite.vx@set</field><value name="mySprite"><block type="variables_get"><field id="w[/QI?b2zkJ//c=4U!ip" name="VAR">mySprite</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">40</field></shadow></value><next><block type="Sprite_blockCombine_set"><field name="property">Sprite.vy@set</field><value name="mySprite"><block type="variables_get"><field id="w[/QI?b2zkJ//c=4U!ip" name="VAR">mySprite</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">60</field></shadow><block type="variables_get"><field id="6$n*-Ixyjhuim}lag7Z*" name="VAR">velocitatX</field></block></value><next><block type="spritesetsetflag"><field name="flag">SpriteFlag.BounceOnWall</field><value name="sprite"><block type="variables_get"><field id="w[/QI?b2zkJ//c=4U!ip" name="VAR">mySprite</field></block></value><value name="on"><shadow type="toggleOnOff"><field name="on">true</field></shadow></value></block></next></block></next></block></next></block></next></block></statement></block></xml>
